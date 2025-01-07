@@ -1,93 +1,39 @@
-# Project Loop AI
+# Project ai-autobuy
 
-An open-source AI-powered trading system built on Solana that provides complete transparency through live-streamed trading decisions. The project aims to create an intelligent trading ecosystem that analyzes token patterns, social signals, and market movements in real-time.
-
-## Features
-
-- Open-source trading algorithm
-- Live decision streaming on Twitch
-- Token analysis system examining:
-  - Chart patterns
-  - Social signals
-  - Market graduates
-- Real-time transparency of all trading decisions
-- Community-driven development
-
-
-## Project Phases
-
-1. **Genesis Block** - Initial infrastructure setup
-2. **AI Integration** - Implementation of trading algorithms
-3. **Live Streaming Setup** - Twitch integration for trade transparency
-4. **Community Tools** - Development of user-facing features
-
-
-## Technology Stack
-
-- Languages: Go
-- Blockchain: Solana
-- Streaming Platform: Twitch
-- AI/ML: Trading algorithm implementation
-- Analysis Tools: Token and market pattern recognition
-
+One Paragraph of project description goes here
 
 ## Getting Started
 
-### Prerequisites
-
-- Solana development environment
-- Go
-- GRPC Node
-
-
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Installation
+## MakeFile
 
-1. Clone the repository
+Run build make command with tests
 ```bash
-git clone https://github.com/yourusername/loop-ai.git
-cd loop-ai
+make all
 ```
 
-2. Install Go dependencies
+Build the application
 ```bash
-go mod init loop-ai
-go mod tidy
+make build
 ```
 
-3. Build the project
+Run the application
 ```bash
-go build -o loop-ai
+make run
 ```
 
-4. Configure environment variables
+Live reload the application:
 ```bash
-cp .env.example .env
-# Edit .env with your configuration
+make watch
 ```
 
-## Usage
+Run the test suite:
+```bash
+make test
+```
 
-Detailed usage instructions will be provided upon official launch.
-
-## Contributing
-
-As an open-source project, we welcome contributions from the community. Please read our contributing guidelines before submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-## Community
-
-- Twitter: [@loopaidotart](https://twitter.com/loopaidotart)
-- Twitch: [Coming Soon]
-
-## Disclaimer
-
-Trading cryptocurrencies carries significant risk. The AI trading system is experimental and should not be considered financial advice. Always conduct your own research before making investment decisions.
-
-
-
-Note: This project is under active development. Features and documentation will be updated as development progresses.
+Clean up binary from the last build:
+```bash
+make clean
+```
